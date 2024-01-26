@@ -1,5 +1,5 @@
 let listaNumerosSorteados= [];
-let numeroLimite = 5000;
+let numeroLimite = 10;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -14,6 +14,7 @@ function exibirMensagemInicial(){
     exibirTextoTela("p", `Escolha um número entre 1 e ${numeroLimite}`);
 }
 
+exibirMensagemInicial();
 
 function verificarSorteado() {
     let chute = document.querySelector("input").value;
